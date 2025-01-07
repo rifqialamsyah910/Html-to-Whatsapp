@@ -1,0 +1,101 @@
+/* Background Gradient */
+body {
+    margin: 0;
+    font-family:Cascadia Code;
+    background: linear-gradient(to bottom, #4f46e5, #60a5fa, #93c5fd);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Container */
+  .container {
+    position: relative;
+    max-width: 480px;
+    width: 100%;
+    background: #000000;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Title and Subtitle */
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .subtitle {
+    display: block;
+    font-size: 1rem;
+    color: #000000;
+    margin-top: 8px;
+  }
+  
+  /* Form Elements */
+  .form {
+    margin-top: 20px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #374151;
+    box-sizing: border-box;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 4px rgba(59, 130, 246, 0.4);
+  }
+  
+  .button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3b82f6;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Decorative Patterns */
+  .pattern {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(40px);
+    opacity: 0.4;
+    z-index: -1;
+  }
+  
+  .pattern-top {
+    top: -40px;
+    left: -40px;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to top right, #ec4899, #fbbf24);
+  }
+  
+  .pattern-bottom {
+    bottom: -60px;
+    right: -60px;
+    width: 160px;
+    height: 160px;
+    background: linear-gradient(to bottom left, #8b5cf6, #3b82f6);
+  }
+  
